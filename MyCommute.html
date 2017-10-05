@@ -23,6 +23,10 @@
             font-size: .9em;
             font-weight: bold;
         }
+        .camImage {
+            width: 352px;
+            height: 260px;
+        }
     </style>
 </head>
 <body class="" style="" xmlns:ng="http://angularjs.org"  ng-app="theApp" ng-strict-di>
@@ -35,7 +39,7 @@
         <div>
             <div class="camName">{{trafficCam.name}}</div>
             <div>
-                <img ng-src="{{trafficCam.src}}" />
+                <img class="camImage" ng-src="{{trafficCam.src}}" />
             </div>
         </div>
     </div>
@@ -65,29 +69,32 @@
 
         //Full list fo WI DOT cams => http://www.511wi.gov/web/traffic/cameras.aspx
         $scope.trafficCams = [
-             {order: 10, name:"13th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0015"}
-            ,{order: 20, name:"20th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0014"}
-            ,{order: 30, name:"25th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0177"}
-            ,{order: 40, name:"30th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0013"}
-            ,{order: 50, name:"39th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0012"}
-            ,{order: 60, name:"WIS 175 (Miller Park)", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0102"}
-            ,{order: 70, name:"Mitchell Blvd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0011"}
-            ,{order: 80, name:"Hawley Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0010"}
-            ,{order: 90, name:"68th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0142"}
-            ,{order: 100, name:"76th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0009"}
-            ,{order: 110, name:"84th St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0141"}
-            ,{order: 120, name:"121st St", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0006"}
-            ,{order: 130, name:"WIS 100", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-40-0007"}
-            ,{order: 140, name:"Elm Grove Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0052"}
-            ,{order: 150, name:"SunnySlope Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0005"}
-            ,{order: 160, name:"Moorland Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0004"}
-            ,{order: 170, name:"Calhoun Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0003"}
-            ,{order: 180, name:"Brookfield Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0138"}
-            ,{order: 190, name:"US 18 (Goerkes Corners)", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0002"}
-            ,{order: 200, name:"Springdale Rd", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0001"}
-            ,{order: 210, name:"County F", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0124"}
-            ,{order: 220, name:"WIS 164", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0053"}
-            ,{order: 230, name:"County T", src:"http://www.511wi.gov/web/CctvImageHandler.ashx?networkID=MILWAUKEE&deviceID=CCTV-67-0129"}
+             {order:10, name:"2nd St", src:"https://511wi.gov/map/Cctv/CCTV-40-0016--1"}
+            ,{order:20, name:"James Lovell Blvd", src:"https://511wi.gov/map/Cctv/CCTV-40-0098--1"}
+            ,{order:30, name:"13th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0015--1"}
+            ,{order:40, name:"20th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0014--1"}
+            ,{order:50, name:"25th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0177--1"}
+            ,{order:60, name:"30th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0013--1"}
+            ,{order:70, name:"35th St", src:"https://511wi.gov/map/Cctv/1rg1rw33qfa--1"}
+            ,{order:80, name:"39th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0012--1"}
+            ,{order:90, name:"WIS 175 (Miller Park)", src:"https://511wi.gov/map/Cctv/CCTV-40-0102--1"}
+            ,{order:100, name:"Mitchell Blvd", src:"https://511wi.gov/map/Cctv/CCTV-40-0011--1"}
+            ,{order:110, name:"Hawley Rd", src:"https://511wi.gov/map/Cctv/CCTV-40-0010--1"}
+            ,{order:120, name:"68th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0142--1"}
+            ,{order:130, name:"76th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0009--1"}
+            ,{order:140, name:"84th St", src:"https://511wi.gov/map/Cctv/CCTV-40-0141--1"}
+            ,{order:150, name:"WIS 100", src:"https://511wi.gov/map/Cctv/CCTV-40-0007--1"}
+            ,{order:160, name:"121st St", src:"https://511wi.gov/map/Cctv/CCTV-40-0006--1"}
+            ,{order:170, name:"Elm Grove Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0052--1"}
+            ,{order:180, name:"SunnySlope Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0005--1"}
+            ,{order:190, name:"Moorland Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0004--1"}
+            ,{order:200, name:"Calhoun Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0003--1"}
+            ,{order:210, name:"Brookfield Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0138--1"}
+            ,{order:220, name:"US 18 (Goerkes Corners)", src:"https://511wi.gov/map/Cctv/CCTV-67-0002--1"}
+            ,{order:230, name:"Springdale Rd", src:"https://511wi.gov/map/Cctv/CCTV-67-0001--1"}
+            ,{order:240, name:"County F", src:"https://511wi.gov/map/Cctv/CCTV-67-0124--1"}
+            ,{order:250, name:"County J", src:"https://511wi.gov/map/Cctv/CCTV-67-0053--1"}
+            ,{order:260, name:"County T", src:"https://511wi.gov/map/Cctv/CCTV-67-0129--1"}
         ];
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -120,11 +127,11 @@
             var trafficCamCount = $scope.trafficCams.length;
             for (var i = 0; i < trafficCamCount; i++) {
                 trafficCamSource = $scope.trafficCams[i].src;
-                if (trafficCamSource.indexOf("&t=") > 0) {
-                    trafficCamSource = trafficCamSource.substring(0, trafficCamSource.indexOf("&t="))
+                if (trafficCamSource.indexOf("?t=") > 0) {
+                    trafficCamSource = trafficCamSource.substring(0, trafficCamSource.indexOf("?t="))
                 }
                 
-                $scope.trafficCams[i].src = trafficCamSource + encodeURI("&t=" + Math.ceil(Math.random() * 100000));
+                $scope.trafficCams[i].src = trafficCamSource + encodeURI("?t=" + Math.ceil(Math.random() * 100000));
             }
         };
 
